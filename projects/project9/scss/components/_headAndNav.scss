@@ -1,0 +1,155 @@
+// Style header and Navigation.
+
+//====== header  =======
+//style icons in header
+
+//placerholder for size of icons 
+/*header{
+    position:fixed;
+    top:0;
+    z-index:2000;
+}*/
+#dash{
+    margin-bottom:1px;
+}
+%icons{
+    height:30px;
+    width:30px;
+    
+    margin:18px 20px 10px 20px;
+    /*@include mediaQry(medium){
+    margin-right:40px;
+    }*/
+}
+.smIcons{
+    @extend %icons;
+   // padding:.1em;
+}
+.smPhotos{
+    height:40px;
+    width:40px;
+    display:inline-block;
+    border-radius:50%;
+    
+    margin:10px 10px 0px 10px
+}
+#burger path{
+    fill:white;
+}
+//li:last-of-type
+/*#user{
+    @include mediaQry(medium){
+    border-left: 1px solid #314282;
+    }
+}*/
+
+#pipe{
+    //content: "\007C";
+    //height:2em;
+    display:inline-block;
+    border-left:$deepPurple;
+    width:2px;
+}
+
+// for pop up
+#bell{
+    position: relative;
+    cursor:pointer;
+}
+
+.popUpText {
+    visibility: hidden;
+    width: 200px;
+    height: 60px;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left:10px;
+    position: absolute;
+    z-index: 3000;
+    border-style: solid;
+    border-color:$deepPurple;
+    background-color:white;
+    transition: all 0.3s;
+    cursor:pointer;
+}
+
+// auto complete search
+.searchContainer{
+    background-color: $soupyFog;
+}
+/*#results{
+    background-color: $soupyFog;
+}*/
+/*.show{
+    visibility:"visible";
+}*/
+
+
+.highlight{
+    // for arrow key movement 
+    background-color:$sand;
+}
+// style container holding search results.
+#userUl{
+    display:none;
+    width: 95vw;
+    min-height:30px;
+    margin-bottom: 20px;
+    overflow:scroll;
+    max-height:100px;
+    @include mediaQry(medium){
+        width:15vw;
+        height:100px;
+        margin-left:20px;
+        margin-top:28px;
+    }
+}
+#results{
+    display:none;
+    width: 95vw;
+    min-height:30px;
+    margin-bottom: 20px;
+    overflow:scroll;
+    max-height:100px;
+    @include mediaQry(medium){
+        width:35vw;
+        height:100px;
+        margin-left:20px;
+        margin-top:28px;
+    }
+}
+#resultsUser.show{
+    display:block;
+    }
+#results.show{
+display:block;
+}
+#resultsUser li{
+    width:95vw;
+    display:block;
+    padding:10px;
+    cursor:pointer;
+    transition: all 0.1s;
+    font-size:12px;
+     margin:auto;
+    @include mediaQry(medium){
+   
+    width:37vw
+    }
+}
+#results li{
+    display:block;
+    padding:10px;
+    cursor:pointer;
+    transition: all 0.1s;
+    font-size:12px;
+}
+#resultsUser li:hover{
+    background :#f4d5b0;
+ 
+}
+#results li:hover{
+    background :#f4d5b0;
+}
+

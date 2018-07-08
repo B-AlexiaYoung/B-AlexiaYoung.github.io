@@ -1,0 +1,338 @@
+/*========      Styles.css     ================
+=====   Project 3 online registation       ====
+=====   normalize.css used in this project ===*/
+
+
+
+/*==== Global styles====*/
+* { 
+    box-sizing: border-box;
+  }
+body{
+    background-color:rgb(188, 194, 196);
+}
+.container{
+      display: flex;
+      flex-direction: column;  
+      background-color:rgb(188, 194, 196);
+      
+      
+  }
+
+
+
+
+
+
+/*=============================================
+            THE CODE REVIEW HEADER 
+      		& styling for headings      
+=============================================*/
+h2{
+	font-family: 'Merriweather', serif;
+	background-color: darkslategray;
+	padding-top: 1em;
+	padding-bottom:1em;
+	margin-top:0;
+	color:white;
+	width:100%;
+	text-align: center;
+	
+}
+
+.heading, h1{
+	text-align: center;
+}
+
+.thick_line{
+	border:solid 2px;
+	width: 95%;
+}
+
+.thin_line{
+	width:95%;
+}
+/*==============================================
+
+            CONTACT INFORMATION SECTION
+
+==============================================*/
+
+.signup_container{
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+
+fieldset { 
+	display: flex;
+	flex-direction:column;
+	margin:2px;
+    /*margin-left: 2px;
+    margin-right: 2px;
+    padding-top: ;
+    padding-bottom: 0.625em;*/
+    padding-left: 10px;
+    padding-right: 10px;
+	background-color:rgb(188, 194, 196);
+	border: none;
+	
+
+}
+/*  lngd_style applies to both contact and newsletter sections  */
+.lgnd_style{
+	font-weight: 700;
+	padding-top: 3em;
+	padding-bottom: 1em;
+	color: darkslategray;
+}
+label{
+	display:block;
+	margin-right:10px;
+	margin-top: .2em;
+	margin-bottom:.2em;
+	background-color:rgb(188, 194, 196);
+	color: darkslategray;
+	
+}
+.input{
+	border:none;
+	
+}
+input:focus{
+	background-color:rgb(234, 230, 227);
+	text-align:left;
+	-webkit-transition: background-color, 1s;
+}
+input[type='text']:focus{
+	text-align:left;
+	
+	}
+.input_full{
+	width: 95%;
+	padding-top: .5em;
+	padding-bottom:.5em;
+}
+.input_select{
+	background-color:rgb(215, 222, 232);
+}
+input[placeholder]{
+	text-align:right;
+	font-weight:100;
+	font-style: italic;
+	color:darkslategray;
+}
+
+select[placeholder]{
+	text-align: left;
+	font-weight: 100;
+	color: darkslategray;
+}
+::placeholder{
+	font-size: 1em;
+	padding-right:5px;
+	font-weight:100;
+	font-style: italic;
+	
+}
+.textarea{
+	width:90%;
+	border-radius:10%;
+}
+input[checkbox]{
+	background-color:rgb(73, 184, 188);
+	color:white;
+}
+
+/*==============================================
+
+            NEWSLETTER SECTION
+
+==============================================*/
+
+.signup{
+	flex-direction:column;
+	display:inline-block;
+	padding-top:.75em;
+	padding-bottom:.75em;
+	background-color:rgb(188, 194, 196);
+} 
+.check_signup{
+	flex-direction:column;
+	display:inline-block;
+}
+	
+
+
+
+.button_signup{
+	width: 95%;
+	background-color:rgb(73, 184, 188);
+	color:white;
+	border-radius:1%;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	border: solid 1px transparent;
+	
+}
+.textarea{
+	height: 5em;
+	border: solid 1px transparent;
+	border-radius: 1%;
+	background-color:rgb(215, 222, 232);
+	width:95%;
+	margin-bottom: 1.5em;
+}
+
+p{
+	padding-left:1em;
+	padding-right:1em;  
+	text-align:center;
+	font-size: 16.5px;
+}
+.news_header{
+	text-align:left;
+	padding-left: 0;
+}
+#hd-cnt,
+.smaller{
+	font-size:10px;
+	
+	text-align:center;
+	
+}
+/*=========   END OF MOBILE   ================*/
+
+
+/*==============================================
+
+            MEDIA QUIERY DESKTOP 
+			MIN WIDTH 768 PX    
+	 looks best at 1200px  meeds further breakpoints
+
+===============================================*/
+@media only screen and (min-width: 768px){
+
+	body{
+	 background-color:rgb(188, 194, 196);
+	
+	}
+fieldset{
+	
+	margin-left: 18%;
+}
+	
+ h3, 
+ p,
+ label,
+legend{
+
+	color:darkslategray;
+}
+
+
+.lgnd_style{
+	padding-top: 5em;
+	margin-top: .5em;
+	color: darkslategray;
+}
+div{
+	height:10vh;
+}
+.thick_line{
+	border:solid 2px;
+	width:60%;
+}
+
+.thin_line{
+	width:60%;
+	margin-bottom:2em;
+
+}
+.thin_line_bottom{
+	margin-top: 2em;
+	width:60%;
+}
+
+
+.input_full{
+display: inline-block;
+width:55%;	
+background-color:rgb(230, 230, 235);
+line-height: 1.5em;
+border: solid 1px transparent;
+border-radius: 1%;
+margin-top:0;
+margin-bottom:0;
+}
+.input_half{
+	width:18%;
+}
+
+label{
+	display:inline-block;
+	margin-bottom: 0em;
+    margin-top: 0em;
+	width:20%;
+}
+
+
+/*==============================================
+
+            NEWSLETTER SECTION
+
+==============================================*/
+
+ 
+.signup{
+	flex-direction:row;
+	width: 27em;
+	margin-bottom: 0em;
+    margin-top: .2em;
+} 
+
+.label_header{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.news_header,
+.label_header{
+	text-align:left;
+	padding-left:0;
+	width:40em;
+}
+
+.textarea{
+	height: 5em;
+	border: solid 1px transparent;
+	border-radius: 1%;
+	background-color:rgb(215, 222, 232);
+	width:60vw;
+	margin-bottom: 3em;
+	margin-top:1.5em;
+}
+
+.button_signup{
+	width: 60vw;
+	border: solid 1px transparent;
+	border-radius: 1%;
+	margin-bottom:2em;
+}
+
+p{
+	padding-top:1em;
+	margin-top:1em;
+}
+#hd-cnt{
+	width:60vw;
+	font-size: small;
+
+
+}
+.smaller{
+	
+	width:15em;
+	
+	
+}
+}/* end media desktop*/

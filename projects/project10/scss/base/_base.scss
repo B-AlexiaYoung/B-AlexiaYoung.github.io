@@ -1,0 +1,67 @@
+//base styles
+.body{
+    font-family: 'Zilla Slab', serif;
+}
+
+    
+#search{
+    width:95%;
+    height:30px;
+    border:1 px solid;
+    border-radius:5px;
+    @include mediaQry(medium){
+    width:50% ;
+  }
+}
+.mainContainer{
+    margin: 0 auto;
+    max-width:1024px;
+    height:100vh;
+    display:grid;
+    grid-template-columns:(1fr) ;
+    grid-template-rows:(115px 1fr);
+    grid-template-areas: 
+    "header"
+    " main" ;
+    
+}
+.mainWrapper{
+    
+    margin:0 auto;
+   
+}
+main{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    grid-gap: 20px 20px;
+    
+    }
+
+.card:hover{
+    cursor:pointer;
+}
+.navContainer{
+    display:flex;
+    flex-direction:row;
+    align-content: center;
+
+}
+.nav1{
+    border: .05px solid grey;
+    display: inline-flex;
+    width:60px;
+    height:20px;
+    background-color:whitesmoke;
+    cursor: pointer;
+
+}
+.nav2{
+    border: .05px solid grey;
+    display:inline-flex;
+    width:60px;
+    height:20px;
+    margin-left:119px;
+    background-color:whitesmoke;
+    cursor: pointer;
+
+}
