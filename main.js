@@ -2,7 +2,7 @@
 
 let projects=[
     {   name:"React Flickr Gallery",
-        src:" ./images/project11.jpg",
+        src:"./images/project11.jpg",
         alt: "project eleven react flickr gallery",
         description: "Image gallery built using React and the Flickr api along with routing and a search function",
         projectUrl: "https://github.com/B-AlexiaYoung/project11-react-photo-viewer/blob/master/public/index.html",
@@ -10,10 +10,10 @@ let projects=[
 
     },
     {   name:"Employee Directory",
-        src:" ./images/project10.jpg",
+        src: "./images/project10.jpg",
         alt: "project ten an employee directory",
         description: "An employee directory built using Javascript, html, css and an api. When an individual is clicked a modal window opens to display more details.",
-        projectUrl: "projects/project10/index.html",
+        projectUrl: "./projects/project10/index.html",
         projectRepo:"",
 
     },
