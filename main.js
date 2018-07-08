@@ -10,7 +10,7 @@ let projects=[
 
     },
     {   name:"Employee Directory",
-        src: "./images/project10.jpg",
+        src:" ./images/project10.jpg",
         alt: "project ten an employee directory",
         description: "An employee directory built using Javascript, html, css and an api. When an individual is clicked a modal window opens to display more details.",
         projectUrl: "./projects/project10/index.html",
