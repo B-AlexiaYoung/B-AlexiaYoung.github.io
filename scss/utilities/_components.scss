@@ -43,9 +43,9 @@ li{
     }
 
 }
-li:hover{
+/*li:hover{
 scale: 1.2;
-}
+}*/
 .navMe{
     padding:10px;
     margin-top:.5rem;
@@ -101,8 +101,7 @@ scale: 1.2;
 
     margin:10px;
     justify-content: space-evenly;
-    /*margin-left:2rem;
-    margin-right:2rem;*/
+   
     @include mediaQry(medium){
         display: flex;
         flex-direction:row;
@@ -126,15 +125,7 @@ scale: 1.2;
     display:inline-flex;
 
 }
-/*.aboutText{
-    background-color: $sand;
-    color:white;
-    font-size: 1em;
-    line-height: 1.3em;
 
-}
-
-}*/
 .aboutText{
     //margin:.2rem;
     width: 95%;
@@ -150,9 +141,7 @@ scale: 1.2;
         justify-content:flex-end;
         background-color:white;
         color:$storm;
-        //padding: .2rem;
         margin:.5rem;
-        //float: right;
         width: 40%;
         border: 2px solid $teal;
         border-radius: 5px;

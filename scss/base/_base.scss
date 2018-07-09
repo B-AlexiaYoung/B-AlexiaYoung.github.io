@@ -113,16 +113,7 @@ color:$storm;
 li:hover{
     color: $teal;
 }
-/*.displayContainer{
-    @include mediaQry(medium){
-        display: flex;
-        flex-dirction:row;
-        
-    }
-}
-#display{
-    flex-direction: row;
-}*/
+
 .projectDisplay{
    
     background-color:$sand;
