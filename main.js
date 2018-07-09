@@ -117,7 +117,7 @@ function more(projectNum){
     span.setAttribute("id","close");
     modalMore.appendChild(span);
 
-    //insert project image into modal
+    //insert project image into modal inside of anchor tag
      let anchor=document.createElement("a");
      anchor.setAttribute("href", projects[projectNum].projectUrl)
      modalMore.appendChild(anchor);
