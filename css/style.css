@@ -16,7 +16,7 @@
 
 ul {
   position: fixed;
-  top: 10;
+  /*top: 10px; */
   margin-top: -10px; }
   @media (min-width: 767px) {
     ul {
@@ -32,8 +32,8 @@ li {
   flex-direction: row;
   padding: .5rem; }
 
-li:hover {
-  scale: 1.2; }
+/*li:hover {
+  scale: 1.2; }  */
 
 .navMe {
   padding: 10px;
@@ -160,7 +160,8 @@ nav {
   @media (min-width: 1024px) {
     .container {
       background-attachment: fixed;
-      z-index: .1; } }
+      /*z-index: .1;*/
+     } }
 
 .info {
   width: 90%;
