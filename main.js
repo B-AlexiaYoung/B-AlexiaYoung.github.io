@@ -1,4 +1,5 @@
 // main.js ...
+/*jshint esversion: 6 */
 
 let projects=[
     {   name: "React Flickr Gallery",
@@ -65,11 +66,11 @@ let projects=[
         projectRepo: ""
     },
     
-]
+];
 let displayContainer= document.getElementById("displayContainer");
 // loop through projects array to display photos.
 let getProjects = () => {
-for(i=0; i<projects.length; i++){
+for(let i=0; i<projects.length; i++){
     //console.log(projects.length);
     let card = document.createElement("div");
     card.setAttribute("id", "display");
@@ -119,7 +120,7 @@ function more(projectNum){
 
     //insert project image into modal inside of anchor tag
      let anchor=document.createElement("a");
-     anchor.setAttribute("href", projects[projectNum].projectUrl)
+     anchor.setAttribute("href", projects[projectNum].projectUrl);
      modalMore.appendChild(anchor);
        let detailImage = document.createElement("img");
 
