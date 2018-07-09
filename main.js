@@ -89,6 +89,8 @@ display[i].appendChild(newLine);
 let  link= document.createElement("a");
 link.innerHTML = projects[i].name;
 link.href =  projects[i].projectUrl;
+link.setAttribute("target", "_blamk");
+
 display[i].appendChild(link);
 
 }
