@@ -46,7 +46,8 @@ li:hover {
   font-size: 3rem;
   color: rgba(61, 164, 171, 0.5);
   margin-top: 0;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  font-family: 'Crushed', cursive; }
 
 .workTitle {
   padding-bottom: 2rem;
@@ -198,6 +199,9 @@ nav {
     .mainTitle {
       font-size: 6em; } }
 
+p {
+  font-family: 'Roboto', sans-serif; }
+
 a:link {
   text-decoration: none;
   color: #4a4e4d; }
@@ -294,6 +298,7 @@ img:hover {
   z-index: 1002;
   background-color: #faebd7;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
   margin-top: 2rem; }
   @media (min-width: 767px) {
     #modalMore {
@@ -310,7 +315,8 @@ img:hover {
 footer {
   text-align: center;
   background-color: white;
-  height: 100px; }
+  height: 100px;
+  font-family: 'Roboto', sans-serif; }
 
 .icon {
   width: 30px;

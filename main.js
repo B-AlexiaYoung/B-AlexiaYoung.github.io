@@ -118,11 +118,15 @@ function more(projectNum){
     modalMore.appendChild(span);
 
     //insert project image into modal
+     let anchor=document.createElement("a");
+     anchor.setAttribute("href", projects[projectNum].projectUrl)
+     modalMore.appendChild(anchor);
        let detailImage = document.createElement("img");
 
        detailImage.src=projects[projectNum].src;
        detailImage.classList.add("imgStyle");
-       modalMore.appendChild(detailImage);
+       //modalMore.appendChild(detailImage);
+       anchor.appendChild(detailImage);
      // insert project name into modal 
        let name= projects[projectNum].name;
        let namepara= document.createElement("p");
